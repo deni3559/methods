@@ -13,7 +13,12 @@ public class Printer {
 
     }
 
+    public void append(String text, String name,
+                       int pagesCount) {
+        queue = queue + "\n" + name + " - " + text;
+        pagesInQueue = pagesInQueue + pagesCount;
 
+    }
 
     public void append(String text, String name) {
         append(text, name, 1);
