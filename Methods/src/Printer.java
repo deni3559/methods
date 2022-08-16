@@ -6,7 +6,7 @@ public class Printer {
     private int printedPages = 0;
     private String text = "";
 
-    public void append(String text, String name,
+    public void append(String text, 
                        int pagesCount) {
         queue = queue + "\n" + name + " - " + text;
         pagesInQueue = pagesInQueue + pagesCount;
@@ -27,7 +27,7 @@ public class Printer {
 
     public void append(String text, int pagesCount) {
 
-        queue = queue + "\n" + "Документ без имени" + " - " + text;
+        queue = queue + "\n" + "Г„Г®ГЄГіГ¬ГҐГ­ГІ ГЎГҐГ§ ГЁГ¬ГҐГ­ГЁ" + " - " + text;
         pagesInQueue = pagesInQueue + pagesCount;
     }
 
